@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.container {
+  border: 1px solid blue; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.row {
+  border: 1px solid red;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+.column {
+  height: 100px;
+  width: 100px;
+  border: 1px solid green;
+  margin: 5px auto;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .column {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px; } }
+  @media (min-width: 1024px) {
+    .column {
+      width: calc(33.33333% - 26.66667px);
+      float: left;
+      margin-left: 20px; } }
+
+/*# sourceMappingURL=output.css.map */

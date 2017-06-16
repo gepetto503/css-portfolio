@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// Libraries
+@import
+  'libraries/bourbon/bourbon',
+  'libraries/neat/neat';
+
+// global vars functions and mixins.
+@import
+  'global/variables',
+  'global/functions',
+  'global/mixins';
+
+//Vendors stuff might go here
+
+
+// Base stuff
+@import
+  'base/base',
+  'base/typography';
+
+// Layout-related sections
+@import
+  'layout/navbar',
+  'layout/main-body';
+
+//components might go here
+
+//page-specific partials might go here
+
+//themes might go here
