@@ -1,0 +1,51 @@
+body {
+  background-color: #efefef;
+
+}
+
+
+header {
+  background: url('../images/hero.jpg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.nav {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  width: 100%;
+  height: 10vh;
+
+
+}
+
+.nav li{
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav li, .nav h2 {
+  color: white;
+}
+
+
+
+/*applied by javascript */
+
+.nav.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}

@@ -1,0 +1,35 @@
+.flex-container {
+
+  font-size: 20px;
+
+  //flex properties
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.project {
+  //size and margin/padding
+  @include size(64vw 64vw);
+  margin: 20px;
+  padding: 20px;
+  flex-basis: auto;
+  @include tablet {
+    @include size(300px 300px);
+  }
+
+}
+
+.uno {
+  background-color: lightpink;
+}
+
+.dos {
+  background-color: lightblue;
+}
+
+.tres {
+  background-color: lightgreen;
+}

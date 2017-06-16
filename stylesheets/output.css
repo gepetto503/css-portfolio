@@ -6,36 +6,103 @@ html {
 *::after {
   box-sizing: inherit; }
 
-.container {
-  border: 1px solid blue; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: block; }
+html, body {
+  margin: 0;
+  padding: 0; }
 
-.row {
-  border: 1px solid red;
-  width: calc(100% - 40px);
-  float: left;
+* {
+  font-family: 'Junction'; }
+
+header h1 {
+  font-size: 22em;
+  color: white;
+  text-align: center; }
+
+nav li, nav h2 {
+  font-size: 14px; }
+
+@font-face {
+  font-family: 'Junction';
+  src: url("fonts/junction-bold.eot");
+  src: url("fonts/junction-bold.eot?#iefix") format("embedded-opentype"), url("fonts/junction-bold.woff") format("woff"), url("fonts/junction-bold.ttf") format("truetype"), url("fonts/junction-bold.svg#junctionbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Junction';
+  src: url("fonts/junction-light.eot");
+  src: url("fonts/junction-light.eot?#iefix") format("embedded-opentype"), url("fonts/junction-light.woff") format("woff"), url("fonts/junction-light.ttf") format("truetype"), url("fonts/junction-light.svg#junctionlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Junction';
+  src: url("fonts/junction-regular.eot");
+  src: url("fonts/junction-regular.eot?#iefix") format("embedded-opentype"), url("fonts/junction-regular.woff") format("woff"), url("fonts/junction-regular.ttf") format("truetype"), url("fonts/junction-regular.svg#junctionregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: #efefef; }
+
+header {
+  background: url("../images/hero.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  width: 100%;
+  height: 10vh; }
+
+.nav li {
+  display: inline;
   margin-left: 20px; }
 
-.column {
-  height: 100px;
-  width: 100px;
-  border: 1px solid green;
-  margin: 5px auto;
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .column {
-      width: calc(25% - 25px);
-      float: left;
-      margin-left: 20px; } }
-  @media (min-width: 1024px) {
-    .column {
-      width: calc(33.33333% - 26.66667px);
-      float: left;
-      margin-left: 20px; } }
+.nav li, .nav h2 {
+  color: white; }
+
+/*applied by javascript */
+.nav.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.main {
+  padding: 20px; }
+
+.flex-container {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.project {
+  height: 64vw;
+  width: 64vw;
+  margin: 20px;
+  padding: 20px;
+  flex-basis: auto; }
+  @media (min-width: 768px) {
+    .project {
+      height: 300px;
+      width: 300px; } }
+
+.uno {
+  background-color: lightpink; }
+
+.dos {
+  background-color: lightblue; }
+
+.tres {
+  background-color: lightgreen; }
 
 /*# sourceMappingURL=output.css.map */

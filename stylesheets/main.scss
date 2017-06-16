@@ -19,10 +19,16 @@
   'base/base',
   'base/typography';
 
+@import
+  'fonts/junction';
+
+
+
 // Layout-related sections
 @import
-  'layout/navbar',
-  'layout/main-body';
+  'layout/header',
+  'layout/layout',
+  'layout/work';
 
 //components might go here
 
