@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Brendan Hanna Portfolio Website_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Portfolio website for web designer/front end developer Brendan Hanna, June 2017_
 
-#### By _**{List of contributors}**_
+#### By _**Brendan Hanna**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This website is designed to showcase my web design projects while incorporating my current html/css/javascript skillset: SASS, Bourbon, Jquery, animations and transitions, flexbox, media queries, and more!_
 
 ## Specs
 
