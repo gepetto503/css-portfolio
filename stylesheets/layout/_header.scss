@@ -33,11 +33,31 @@ header {
     height: 30px;
     display: block;
     float: right;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    flex-basis: 100%;
+    top: 74%;
+    left: -44px;
+    background-color: #262626;
+    @include tablet {
+      position: relative;
+      top: auto;
+      left: auto;
+      flex-basis: auto;
+      width: auto;
+    }
   }
 
   li {
     margin-left: 20px;
     display: none;
+    line-height: 3em;
     @include tablet {
       display: inline;
     };

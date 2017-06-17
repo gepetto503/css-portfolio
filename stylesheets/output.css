@@ -78,9 +78,27 @@ header {
     height: 30px;
     display: block;
     float: right; }
+    @media (min-width: 768px) {
+      .nav .icon {
+        display: none; } }
+  .nav ul {
+    position: absolute;
+    width: 100%;
+    flex-basis: 100%;
+    top: 74%;
+    left: -44px;
+    background-color: #262626; }
+    @media (min-width: 768px) {
+      .nav ul {
+        position: relative;
+        top: auto;
+        left: auto;
+        flex-basis: auto;
+        width: auto; } }
   .nav li {
     margin-left: 20px;
-    display: none; }
+    display: none;
+    line-height: 3em; }
     @media (min-width: 768px) {
       .nav li {
         display: inline; } }
