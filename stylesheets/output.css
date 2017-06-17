@@ -74,15 +74,21 @@ header {
   width: 100%;
   height: 12vh;
   transition: all 400ms linear; }
+  .nav .icon {
+    height: 30px;
+    display: block;
+    float: right; }
   .nav li {
-    display: inline;
     margin-left: 20px;
     display: none; }
-    .nav li .responsive {
-      display: inline; }
     @media (min-width: 768px) {
       .nav li {
         display: inline; } }
+  .nav.responsive {
+    position: relative; }
+    .nav.responsive li {
+      display: block;
+      float: none; }
 
 /* classes applied by scrolling past the height of the hero image */
 .nav.sticky-header {

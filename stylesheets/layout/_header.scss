@@ -29,18 +29,37 @@ header {
   height: 12vh;
   transition: all 400ms linear;
 
+  .icon {
+    height: 30px;
+    display: block;
+    float: right;
+  }
+
   li {
-    display: inline;
     margin-left: 20px;
     display: none;
-      .responsive {
-        display: inline;
-      }
     @include tablet {
       display: inline;
     };
   }
+
+  &.responsive {
+    position: relative;
+
+    & li {
+      display: block;
+      float: none;
+    }
+
+    // .icon {
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+    // }
+  }
 }
+
+
 
 
 /* classes applied by scrolling past the height of the hero image */
