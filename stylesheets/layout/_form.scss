@@ -1,0 +1,22 @@
+.form-flex-container {
+  border: 2px solid orange;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form-group {
+    border: 1px solid purple;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    label {
+      border: 1px dashed grey;
+    }
+    input {
+      border: 1px solid red;
+    }
+  }
+
+}

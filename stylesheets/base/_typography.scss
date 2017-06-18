@@ -20,3 +20,19 @@ nav {
   font-size: 14px;
   }
 }
+
+.highlight-text {
+  color: $color
+}
+
+.project p {
+  font-size: 1.4em;
+  @include tablet {
+    font-size: 1em;
+  };
+  @include desktop {
+    font-size: .8em;
+    line-height: 1.2;
+    margin: 0;
+  };
+}

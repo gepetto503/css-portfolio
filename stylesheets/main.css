@@ -32,20 +32,6 @@ header h1 {
 nav li, nav h2 {
   font-size: 14px; }
 
-.highlight-text {
-  color: #ffa172; }
-
-.project p {
-  font-size: 1.4em; }
-  @media (min-width: 768px) {
-    .project p {
-      font-size: 1em; } }
-  @media (min-width: 1024px) {
-    .project p {
-      font-size: .8em;
-      line-height: 1.2;
-      margin: 0; } }
-
 @font-face {
   font-family: 'Junction';
   src: url("fonts/junction-bold.eot");
@@ -92,12 +78,12 @@ nav li, nav h2 {
   background-color: rgba(255, 255, 255, 0.93);
   opacity: 1;
   top: 0px;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid gainsboro; }
 
 .logo {
   width: 50px;
   font-size: 25px;
-  color: #ffa172;
+  color: #8f8f8f;
   text-transform: uppercase;
   float: left;
   display: block;
@@ -159,7 +145,7 @@ nav {
     height: 4px;
     margin-bottom: 6px;
     border-radius: 1000px;
-    background: #ffa172;
+    background: #8f8f8f;
     display: block; }
 
 .row {
@@ -173,6 +159,7 @@ nav {
   box-sizing: border-box; }
 
 body {
+  color: #8f8f8f;
   background: white;
   font-family: "Cardo", serif;
   font-weight: 300;
@@ -266,6 +253,9 @@ p {
 .main {
   padding: 20px; }
 
+* {
+  background-color: blue; }
+
 .flex-container {
   font-size: 20px;
   display: flex;
@@ -276,15 +266,12 @@ p {
   height: 64vw;
   width: 64vw;
   margin: 20px;
+  padding: 20px;
   flex-basis: auto; }
   @media (min-width: 768px) {
     .project {
       height: 300px;
       width: 300px; } }
-  @media (min-width: 1024px) {
-    .project {
-      height: 200px;
-      width: 200px; } }
 
 .uno {
   background-color: lightpink; }
@@ -304,7 +291,8 @@ p {
   transform: rotateY(180deg); }
 
 .flip-container, .front, .back {
-  width: 100%; }
+  width: 320px;
+  height: 480px; }
 
 /* flip speed goes here */
 .flipper {
@@ -324,52 +312,9 @@ p {
   z-index: 2;
   /* for firefox 31 */
   transform: rotateY(0deg); }
-  .front img {
-    width: 100%; }
 
 /* back, initially hidden pane */
 .back {
-  transform: rotateY(180deg);
-  padding: 20px; }
+  transform: rotateY(180deg); }
 
-.about-flex-container {
-  border: 1px solid green;
-  padding: 1em;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap; }
-  .about-flex-container .image {
-    flex-basis: 100%; }
-    @media (min-width: 768px) {
-      .about-flex-container .image {
-        flex-basis: 30%; } }
-    .about-flex-container .image img {
-      border: 1px solid red;
-      width: 100%; }
-  .about-flex-container p {
-    border: 1px solid blue;
-    padding: 1em;
-    flex-basis: 100%; }
-    @media (min-width: 768px) {
-      .about-flex-container p {
-        margin-left: 40px;
-        flex-basis: 40%; } }
-
-.form-flex-container {
-  border: 2px solid orange;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .form-flex-container .form-group {
-    border: 1px solid purple;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto; }
-    .form-flex-container .form-group label {
-      border: 1px dashed grey; }
-    .form-flex-container .form-group input {
-      border: 1px solid red; }
-
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=main.css.map */

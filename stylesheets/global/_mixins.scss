@@ -5,6 +5,13 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+@mixin small {
+  @media only screen and (max-width: 766px) {
+    @content;
+  }
+}
+
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
