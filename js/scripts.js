@@ -1,28 +1,39 @@
-//back end
-function myFunction() {//responsive navbar
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav";
-    }
-}
+$(function(){
 
-//front end
-$(function(){//document ready
-
+  // Sticky Header
   $(window).scroll(function() {
-    if ($(window).scrollTop() >= $("header").height()) {
-      $(".nav").addClass("sticky-header");
-      $("#nav-title").addClass("bouncy-name");
-    } else {
-      $(".nav").removeClass("sticky-header");
-      $("#nav-title").removeClass("bouncy-name");
-    }
 
-
-    $("#title").css("opacity", 1 - $(window).scrollTop() / 500);
-
+      if ($(window).scrollTop() > 100) {
+          $('.main_h').addClass('sticky');
+      } else {
+          $('.main_h').removeClass('sticky');
+      }
   });
 
-});//end document ready
+  // Mobile Navigation
+  $('.mobile-toggle').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+          $('.main_h').removeClass('open-nav');
+      } else {
+          $('.main_h').addClass('open-nav');
+      }
+  });
+
+  $('.main_h li a').click(function() {
+      if ($('.main_h').hasClass('open-nav')) {
+          $('.navigation').removeClass('open-nav');
+          $('.main_h').removeClass('open-nav');
+      }
+  });
+
+  // Navigation Scroll - ljepo radi materem
+  $('nav a').click(function(event) {
+      var id = $(this).attr("href");
+      var offset = 70;
+      var target = $(id).offset().top - offset;
+      $('html, body').animate({
+          scrollTop: target
+      }, 500);
+      event.preventDefault();
+  });
+});
