@@ -21,6 +21,9 @@ a {
   text-decoration: none;
   color: white; }
 
+li {
+  list-style: none; }
+
 * {
   font-family: 'Junction'; }
 
@@ -357,19 +360,39 @@ p {
         flex-basis: 40%; } }
 
 .form-flex-container {
-  border: 2px solid orange;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .form-flex-container .form-group {
-    border: 1px solid purple;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto; }
-    .form-flex-container .form-group label {
-      border: 1px dashed grey; }
-    .form-flex-container .form-group input {
-      border: 1px solid red; }
+  .form-flex-container .my-form {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 30px; }
+    .form-flex-container .my-form .form-group {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto; }
+      .form-flex-container .my-form .form-group label {
+        margin-bottom: 20px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  padding-top: 15px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center; }
+  footer li {
+    margin: auto 10px;
+    padding-right: 20px;
+    border-right: 1px solid white; }
+
+footer a:nth-child(3) li {
+  border-right: none; }
 
 /*# sourceMappingURL=output.css.map */
