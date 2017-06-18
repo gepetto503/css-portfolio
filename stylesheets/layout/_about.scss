@@ -1,5 +1,4 @@
 .about-flex-container {
-  border: 1px solid green;
   padding: 1em;
   display: flex;
   justify-content: flex-start;
@@ -11,14 +10,12 @@
       flex-basis: 30%;
     };
     img {
-    border: 1px solid red;
     width: 100%;
     }
   }
 
 
   p {
-    border: 1px solid blue;
     padding: 1em;
     flex-basis: 100%;
     @include tablet {

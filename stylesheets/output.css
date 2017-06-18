@@ -336,7 +336,6 @@ p {
   padding: 20px; }
 
 .about-flex-container {
-  border: 1px solid green;
   padding: 1em;
   display: flex;
   justify-content: flex-start;
@@ -348,10 +347,8 @@ p {
       .about-flex-container .image {
         flex-basis: 30%; } }
     .about-flex-container .image img {
-      border: 1px solid red;
       width: 100%; }
   .about-flex-container p {
-    border: 1px solid blue;
     padding: 1em;
     flex-basis: 100%; }
     @media (min-width: 768px) {
