@@ -4,16 +4,40 @@
   font-family: 'Junction';
 }
 
+
+
+
+
 h1 {
-
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
 }
 
-header h1 {
-  font-size: 22em;
-  color: white;
-  text-align: center;
 
+
+.hero {
+  h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+  }
+
+  span {
+    font-size: 25px;
+    line-height: 2;
+    color: $color2;
+    // border-bottom: 2px solid $color2;
+    // padding-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 2;
+  }
 }
+
 
 nav {
   li, h2 {
@@ -26,7 +50,6 @@ nav {
 }
 
 .project p {
-  font-size: 1.4em;
   @include tablet {
     font-size: 1em;
   };
